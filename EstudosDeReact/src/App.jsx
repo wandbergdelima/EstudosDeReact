@@ -1,24 +1,25 @@
 import './App.css';
 import React, { Component } from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import Formulario from './Formulario.jsx';
+import Header from './header/Header.jsx';
+import Footer from './footer/Footer.jsx';
+import Formulario from './formulario/Formulario.jsx';
+import image from './assets/lobo.jpg';
+import image2 from './assets/lobo2.jpg';
 
+function App() {
+  return (
+    <div>
+      <Header />
 
-class App extends Component {
-  render() {
-    return (
+      <Formulario />
+
+      <Footer />
       <div>
-        <Header />
-
-        <Formulario />
-
-        <Footer />
-
+        <img src={image2} alt="lobinho" srcset="" />
       </div>
-    );
-  };
-}
+    </div>
+  );
+};
 
 export default App;
 // export default App;
