@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 import Header from './header/Header.jsx';
 import Footer from './footer/Footer.jsx';
 import Formulario from './formulario/Formulario.jsx';
-import image from './assets/lobo.jpg';
-import image2 from './assets/lobo2.jpg';
+import imagens from './assets/imagens.jsx';
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
 
       <Footer />
       <div>
-        <img src={image2} alt="lobinho" srcset="" />
+        <img src={`<imagens />`} alt="lobo" />
       </div>
     </div>
   );
